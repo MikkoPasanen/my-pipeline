@@ -10,9 +10,8 @@ services:
     container_name: watchtower
 
   node-app:
-    build: mikhelson/node-app:latest
+    image: mikhelson/node-app:latest
+    build: .
     ports:
       - 8080:8080
     container_name: node-app
-    labels:
-      - com.centurylinklabs.watchtower.enable=true
