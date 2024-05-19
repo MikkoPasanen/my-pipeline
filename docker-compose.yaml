@@ -10,7 +10,7 @@ services:
     container_name: watchtower
 
   node-app:
-    build: .
+    build: mikhelson/node-app:latest
     ports:
       - 8080:8080
     container_name: node-app
